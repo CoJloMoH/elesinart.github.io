@@ -1,0 +1,210 @@
+body{
+	font-family: 'Open-Sans';
+}
+html{
+	font-size: 10px;
+}
+a:focus, a:active, a:visited{
+	outline: none;
+	text-decoration: none;
+}
+.wrapper{
+	display: table-cell;
+	vertical-align: middle;
+}
+.main{
+	position: relative;
+	display: table;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	height: 100vh;
+	background: #000 url(../img/i.jpg) center center no-repeat;
+}
+.main-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+}
+.main-header{
+	position: relative;
+	z-index: 2;
+}
+.main h1{
+	margin-bottom: 1.8rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 4.8rem;
+}
+.main p{
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+.main-line{
+	width: 200px;
+	height: 1px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.main-down{
+	position: absolute;
+	color: #fff;
+	z-index: 4;
+	bottom: 2rem;
+	display: inline-block;
+	font-size: 2rem;
+	width: 50px;
+	height: 50px;
+	left: 50%;
+	margin-left: -25px;
+	border-radius:50%;
+	border: 1px solid transparent;
+	line-height: 50px;
+	transition: 0.2s;
+}
+.main-down:hover{
+	border:1px solid #fff;
+	color:#fff;
+}
+
+/*Секция портфолио*/
+.portfolio{
+	padding: 10rem 0;
+	text-align: center;
+}
+.section-header{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 3.6rem;
+	margin-bottom: 5rem;
+}
+.portfolio img{
+	width: 100%;
+	max-width: 360px;
+	box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54) ;
+}
+.portfolio a{
+	display: block;
+	margin: 2rem auto 5rem;
+	margin-top: 2rem;
+	color: #333;
+	border-bottom: 1px solid transparent;
+}
+.portfolio a:hover{
+	text-decoration: none;
+	border-bottom: 1px dotted #333; 
+	width: 16rem;
+}
+
+/*Сексия футер*/
+
+.footer{
+	background: #646464;
+	color: #fff;
+	text-align: center;
+	padding: 3rem 0;
+}
+.footer strong{
+	font-weight: 300;
+	font-size: 2.4rem;
+
+}
+.social-links{
+	margin-top: 1rem;
+
+}
+.social-links a{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	color:#fff;
+	border: solid 1px #fff;
+	border-radius:50%;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-size: 2rem;
+	transition: 0.2s;
+}
+.social-links a:hover{
+	background-color: #fff;
+	color:#646464;
+}
+.offer-btn{
+	display: block;
+	width: 70%;
+	max-width: 200px;
+	margin: 1rem auto;
+	border: 1px solid #fff;
+	border-radius: 100px;
+	padding: 1rem 0;
+	color: #fff;
+	transition: 0.2s;
+}
+.offer-btn:hover{
+	background-color: #fff;
+	color: #646464;
+	text-decoration: none;
+}
+
+/*Работа с модулем*/
+
+.modal img{
+	width: 100%;
+}
+
+.modal-title{
+	font-weight: 800;
+	font-size: 2rem;
+}
+.close{
+	background-color: transparent;
+	border:none;
+	font-size: 2.5rem;
+	position: absolute;
+	right: 2rem;
+	top: 1rem;
+}
+.modal-btn{
+	display: block;
+	color:#333;
+	border:1px solid #333;
+	padding:10px 20px;
+	border-radius: 5px;
+	width: 9rem;
+}
+.modal-btn:hover{
+	background-color: #646464;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+	html{
+		font-size: 7px;
+	}
+	.footer strong{
+		margin: 3rem 0 0.5rem;
+		display: inline-block;
+	}
+	.offer-btn{
+		max-width: 150px;
+	}
+	.social-links a{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.footer strong{
+		margin: 3rem 0 0.5rem;
+		display: inline-block;
+	}
+	.offer-btn{
+		max-width: 200px;
+	}
+}
